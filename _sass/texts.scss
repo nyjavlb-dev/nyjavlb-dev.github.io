@@ -1,0 +1,19 @@
+@import "variables";
+
+h1 {
+  margin: 3px 0px;
+}
+
+p {
+  margin: 2px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-color;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

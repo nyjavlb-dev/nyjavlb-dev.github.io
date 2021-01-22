@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+<h1>New York Lithuanians</h1>
+<p>Welcome to the community's website!</p>
+
+<hr />
+
+<h2 class="title">Subscribe to our mailing list</h2>
+<section class="mailing-list">
+	<input type="email" placeholder="Your email address" /><button>Subscribe</button>
+</section>
+
+<hr />
+
+<h2 class="title">Useful links</h2>
+<section class="reference-list">
+	{% for item in site.data.references %}
+		<article>
+			<img src="assets/images/{{ item.image }}" alt="">
+			<span>
+				<h2>{{ item.name }}</h2>
+				{% if item.facebook %}
+					<a href="{{ item.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+				{% endif %}
+				{% if item.website %}
+					<a href="{{ item.website }}" target="_blank" rel="noopener noreferrer">Website</a>
+				{% endif %}
+				{% if item.address %}
+					<a href="{{ item.address }}" target="_blank" rel="noopener noreferrer">Google Maps</a>
+				{% endif %}
+			</span>
+		</article>
+	{% endfor %}
+</section>
+
+<hr />

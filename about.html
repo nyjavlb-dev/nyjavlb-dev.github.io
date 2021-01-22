@@ -1,0 +1,29 @@
+---
+layout: default
+title: About
+---
+<h1>About us</h1>
+
+<hr />
+
+<section class="boards">
+  <h2 class="title">New York City Lithuanian American Community co-chairs:</h2>
+
+  <ul>
+    {% for member in site.data.co-chairs %}
+      <li>
+        <strong>{{ member.name }}</strong> - <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2 class="title">Board members:</h2>
+
+  <ul>
+    {% for member in site.data.board %}
+      <li>
+        <strong>{{ member.name }}</strong> - <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
