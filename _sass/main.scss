@@ -21,6 +21,10 @@ nav {
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: $container-width) {
+    font-size: 16px;
+  }
+
   a {
     text-decoration: none;
     color: #2d3436;
@@ -59,6 +63,11 @@ footer {
   margin: 0px auto;
   width: $container-width;
   min-height: calc(100vh - #{$bar-height});
+
+  @media screen and (max-width: $container-width) {
+    width: 100%;
+    padding: 0px 10px;
+  }
 }
 
 .current {
@@ -75,7 +84,12 @@ hr {
 h2.title {
   font-weight: 200;
   color: $accent-color;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+
+  @media screen and (max-width: $container-width) {
+    font-size: 18px;
+  }
 }
 
 section {

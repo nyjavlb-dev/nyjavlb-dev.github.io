@@ -2,20 +2,22 @@
 layout: default
 title: Home
 ---
-<h1>New York Lithuanians</h1>
+{% assign translations=site.data.general[site.lang] %}
+<h1>{{ translations.home_welcome_text }}</h1>
 
 <hr />
 
-<h2 class="title">Subscribe to our mailing list</h2>
+<h2 class="title">{{ translations.subscribe_bar_title }}</h2>
 <section class="mailing-list">
-	<input type="email" placeholder="Your email address" /><button>Subscribe</button>
+	<input type="email" placeholder="{{ site.data.general.en.subscribe_input_placeholder }}" />
+	<button>{{ translations.subscribe_cta }}</button>
 </section>
 
 <hr />
 
-<h2 class="title">Useful links</h2>
+<h2 class="title">{{ translations.useful_links }}</h2>
 <section class="reference-list">
-	{% for item in site.data.references %}
+	{% for item in site.data.references[site.lang] %}
 		<article>
 			<img src="assets/images/{{ item.image }}" alt="">
 			<span>
@@ -24,7 +26,7 @@ title: Home
 					<a href="{{ item.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a>
 				{% endif %}
 				{% if item.website %}
-					<a href="{{ item.website }}" target="_blank" rel="noopener noreferrer">Website</a>
+					<a href="{{ item.website }}" target="_blank" rel="noopener noreferrer">{{ translations.website }}</a>
 				{% endif %}
 				{% if item.address %}
 					<a href="{{ item.address }}" target="_blank" rel="noopener noreferrer">Google Maps</a>

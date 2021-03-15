@@ -12,6 +12,10 @@ section.reference-list {
     h2 {
       margin: 0 0 5px 0;
       font-weight: 300;
+
+      @media screen and (max-width: $container-width) {
+        font-size: 20px;
+      }
     }
 
     a {
@@ -28,10 +32,8 @@ section.reference-list {
 }
 
 section.mailing-list {
-  p {
-    margin: 0px;
-    padding: 0px;
-  }
+  display: flex;
+  justify-content: center;
 
   button {
     background-color: $accent-color;

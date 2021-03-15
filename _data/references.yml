@@ -1,15 +1,38 @@
-- name: NY Maironis Lithuanian School
-  facebook: https://www.facebook.com/Maironio/
-  image: maironio.jpg
-- name: Lithuanian Alliance of America
-  website: https://www.laa-sla.org/
-  address: 307 W 30th St, New York, NY 10001
-  facebook: https://www.facebook.com/SLAartspace/
-  image: sla.jpg
-- name: New York Lithuanian Professionals
-  facebook: https://www.facebook.com/nylithuanianprofessionals
-  image: nylp.png
-- name: Consulate General of Lithuania in NY
-  website: http://ny.mfa.lt
-  facebook: https://www.facebook.com/lietuvosgeneralinis.konsulatasniujorke
-  image: consulate.jpg
+en:
+  - name: NY Maironis Lithuanian School
+    facebook: https://www.facebook.com/Maironio/
+    image: maironio.jpg
+  - name: Lithuanian Alliance of America
+    website: https://www.laa-sla.org/
+    address: 307 W 30th St, New York, NY 10001
+    facebook: https://www.facebook.com/SLAartspace/
+    image: sla.jpg
+  - name: New York Lithuanian Professionals
+    facebook: https://www.facebook.com/nylithuanianprofessionals
+    image: nylp.png
+  - name: Consulate General of Lithuania in NY
+    website: http://ny.mfa.lt
+    facebook: https://www.facebook.com/lietuvosgeneralinis.konsulatasniujorke
+    image: consulate.jpg
+  - name: Annunciation-NY parish
+    website: http://www.nyapreiskimo.com/
+    image: nyapreiskimo.jpg
+lt:
+  - name: Niujorko Maironio mokykla
+    facebook: https://www.facebook.com/Maironio/
+    image: maironio.jpg
+  - name: Susivienijimas Lietuvių Amerikoje
+    website: https://www.laa-sla.org/
+    address: 307 W 30th St, New York, NY 10001
+    facebook: https://www.facebook.com/SLAartspace/
+    image: sla.jpg
+  - name: Niujorko Lietuviai Profesionalai
+    facebook: https://www.facebook.com/nylithuanianprofessionals
+    image: nylp.png
+  - name: Lietuvos Generalinis Konsulatas Niujorke
+    website: http://ny.mfa.lt
+    facebook: https://www.facebook.com/lietuvosgeneralinis.konsulatasniujorke
+    image: consulate.jpg
+  - name: Niujorko Apreiškimo parapija
+    website: http://www.nyapreiskimo.com/
+    image: nyapreiskimo.jpg

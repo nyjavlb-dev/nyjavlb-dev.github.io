@@ -1,2 +1,4 @@
-permalink: /:title/
+permalink: pretty
 url: nedjulius.github.io
+lang: en
+languages: ["en", "lt"]
