@@ -1,7 +1,24 @@
 <nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
+  <div class="links">
+    {% assign pages = site.pages | sort: "nav-order" %}
+    {% for p in pages %}
+      {% if p.language == page.language %}
+        <a href="{{ p.url | prepend: site.baseurl }}" {% if page.url == p.url %}class="current"{% endif %}>
+          {{ p.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+    <a href="https://www.facebook.com/nylithuanian" target="_blank">Facebook</a>
+  </div>
+  <div class="languages">
+    {% if page.name contains "index" %}
+      <a href="/">EN</a>
+      |
+      <a href="{{ site.baseurl | append: '/lt' }}">LT</a>
+    {% else %}
+      <a href="{{ site.baseurl | append: page.handle }}">EN</a>
+      |
+      <a href="{{ site.baseurl | append: '/lt' | append: page.handle }}">LT</a>
+    {% endif %}
+  </div>
 </nav>
