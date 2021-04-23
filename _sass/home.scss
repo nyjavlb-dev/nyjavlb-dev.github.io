@@ -30,39 +30,3 @@ section.reference-list {
     }
   }
 }
-
-section.mailing-list {
-  display: flex;
-  justify-content: center;
-
-  button {
-    background-color: $accent-color;
-    font-family: 'Lora', serif;
-    font-size: 14px;
-    border: none;
-    color: white;
-    padding: 10px;
-    transition: 0.2s;
-
-    &:hover {
-      cursor: pointer;
-      opacity: 0.9;
-    }
-  }
-
-  input {
-    border: none;
-    padding: 10px;
-    font-size: 14px;
-    box-shadow: inset 0px -1px 0px $light-gray;
-    font-family: 'Lora', serif;
-    width: 50%;
-    transition: 0.2s;
-
-    &:focus {
-      outline: none;
-      box-shadow: inset 0px -1px 0px $accent-color;
-    }
-  }
-
-}

@@ -10,10 +10,7 @@ nav-order: 1
 <hr />
 
 <h2 class="title">{{ translations.subscribe_bar_title }}</h2>
-<section class="mailing-list">
-	<input type="email" placeholder="{{ translations.subscribe_input_placeholder }}" />
-	<button>{{ translations.subscribe_cta }}</button>
-</section>
+{% include mailerlite-lt.html %}
 
 <hr />
 
